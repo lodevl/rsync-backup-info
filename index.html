@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23164eab'/%3E%3Cpath d='M8 10h16v14H8zM11 7h10v3H11z' fill='white'/%3E%3Cpath d='M12 15h8v2h-8z' fill='%23164eab'/%3E%3C/svg%3E">
+<title>rsync — Personal Google Drive backup</title>
+<meta name="description" content="Information and privacy policy for a personal Google Drive backup app using rclone.">
+<style>
+:root{font-family:system-ui,sans-serif;color:#172334;background:#f3f6fa;font-size:16px;line-height:1.65}body{margin:0}main{max-width:760px;margin:4rem auto;padding:2.5rem;background:white;border:1px solid #dce3eb;border-radius:12px}h1{font-size:2rem;line-height:1.2}h2{margin-top:2.3rem;font-size:1.4rem}h3{font-size:1.05rem;margin-bottom:.25rem}a{color:#164eab}nav{border-bottom:1px solid #dce3eb;padding-bottom:1rem}nav a{margin-right:1.4rem}.note{color:#596879}footer{border-top:1px solid #dce3eb;margin-top:2.5rem;padding-top:1rem;font-size:.9rem}@media(max-width:800px){main{margin:0;padding:1.5rem;border:0;border-radius:0}}
+</style>
+</head>
+<body><main>
+<nav aria-label="Page sections"><a href="./">About the app</a><a href="privacy.html">Privacy policy</a></nav>
+<section id="about">
+<h1>rsync</h1>
+<p>A personal Google Drive backup app operated by the owner of the connected Google account. The backup runs on the owner's computer using <a href="https://rclone.org/">rclone</a>.</p>
+<p>Its purpose is to copy selected local folders into a chosen Google Drive folder, retry interrupted transfers, and compare file checksums to verify the copy. It is not a public file-storage service.</p>
+<p>This information page does not provide a sign-in form and does not receive the files being backed up.</p>
+</section>
+<section id="privacy">
+<h2>Privacy policy</h2>
+<p class="note">Last updated: 4 October 2026</p>
+<h3>Google account access</h3>
+<p>The app uses Google OAuth authorization to access Google Drive. The requested Drive permission allows it to read and manage Drive files. Its backup configuration selects the destination folder and the local folders to copy.</p>
+<h3>Data used by the backup</h3>
+<p>The backup processes file contents, names, folder paths, sizes, modification times and checksums. It uses this information to upload files, identify matching copies and verify completed transfers. Files that differ from an existing destination file are preserved in a separate previous-files folder before replacement.</p>
+<h3>Where data is stored</h3>
+<p>Backup files are stored in the owner's Google Drive. Authorization credentials, transfer logs and verification reports are stored on the owner's computer. Logs and reports may include filenames and paths. This information page does not store those files or credentials.</p>
+<h3>Sharing and use</h3>
+<p>The backup transfers selected files to Google Drive for the account owner's storage purposes. It does not intentionally publish the files, sell their contents, use them for advertising or send them to an AI model. Existing Google Drive sharing settings remain under the account owner's control. Google's processing is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+<h3>Retention and control</h3>
+<p>Copies remain in Google Drive until the owner removes them. The owner can stop the backup service, remove local logs and credentials, and revoke the app's access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revoking access stops future access; it does not remove files already copied.</p>
+<h3>This information page</h3>
+<p>The page contains no analytics scripts, advertising, account registration or file-upload form. Its hosting provider may process normal network and access logs needed to deliver the page.</p>
+<h3>Questions</h3>
+<p>This app is for its owner's personal use. The support contact displayed on Google's authorization screen is the app owner's contact.</p>
+</section>
+<footer>Personal backup application · Google Drive is a service provided by Google.</footer>
+</main></body></html>
